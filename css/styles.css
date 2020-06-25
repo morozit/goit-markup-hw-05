@@ -183,7 +183,22 @@ p {
   transform: scaleX(0); 
   transition:  var(--timing-animation);
   color: var(--text-title-color);
-  
+}
+
+.current::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  transform: scaleX(1); 
+
 }
 
 .nav-link:hover,
@@ -195,8 +210,6 @@ p {
   color: var(--accent-color);
   fill: var(--accent-color);
   transform: scaleX(1); 
-    
-    
 }
 
 .site-nav .nav-link.current {
@@ -688,7 +701,7 @@ footer b {
   margin-left: 10px;
 }
 
-.copy-rite {
+/* .copy-rite {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   width: 1170px;
   margin-right: auto;
@@ -698,7 +711,7 @@ footer b {
   padding-bottom: 21px;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.4);
-}
+} */
 
 
 
@@ -747,6 +760,7 @@ footer b {
   display: block;
   width: calc((100% - 60px) / 3);
   margin-top: 30px;
+  border: 1px solid #EEEEEE;
   border-radius: 0px 0px 4px 4px;
   transition: box-shadow var(--timing-animation);
 
