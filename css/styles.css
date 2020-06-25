@@ -144,9 +144,9 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
   color: var(--text-title-color);
-  transition:  var(--timing-animation);
+  
+  transition: color var(--timing-animation);
 }
 
 .address-nav .link {
@@ -165,7 +165,8 @@ p {
   
   color: var(--text-title-color);
   fill: var(--primary-logo-color);
-  transition:  var(--timing-animation);
+  transition: color var(--timing-animation), 
+  fill var(--timing-animation);
 }
 
 .nav-link::after {
@@ -180,9 +181,11 @@ p {
   height: 5px;
   border-radius: 2px;
   background-color: var(--accent-color);
-  transform: scaleX(0); 
-  transition:  var(--timing-animation);
   color: var(--text-title-color);
+  transform: scaleX(0); 
+  transition: var(--timing-animation);
+  
+
 }
 
 .current::before {
@@ -198,7 +201,6 @@ p {
   border-radius: 2px;
   background-color: var(--accent-color);
   transform: scaleX(1); 
-
 }
 
 .nav-link:hover,
@@ -211,7 +213,9 @@ p {
 .address-footer .link:focus  {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transform: scaleX(1); 
+  transform: scaleX(1);
+  
+  
 }
 
 .site-nav .nav-link.current {
