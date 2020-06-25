@@ -132,21 +132,39 @@ p {
   margin-right: 31px;
 }
 
-.nav-link,
-.address-nav .link {
+.nav-link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--text-title-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  fill: var(--primary-logo-color);
+
+  color: var(--text-title-color);
+}
+
+.address-nav .link {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  
+  color: var(--text-title-color);
+  fill: var(--primary-logo-color);
+  
 }
 
 .nav-link::after {
@@ -163,6 +181,7 @@ p {
   background-color: var(--accent-color);
   transform: scaleX(0); 
   transition:  var(--timing-animation);
+  color: var(--text-title-color);
 }
 
 .nav-link:hover,
