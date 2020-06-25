@@ -12,7 +12,7 @@
   --primary-white-color:  #FFFFFF;
   --secondary-grey-color: #F5F4FA;
   --primary-logo-color: #AFB1B8; 
-  --timing-animation: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-animation: 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -144,9 +144,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--text-title-color);
-  
-  transition: color var(--timing-animation);
 }
 
 .address-nav .link {
@@ -183,7 +180,8 @@ p {
   background-color: var(--accent-color);
   color: var(--text-title-color);
   transform: scaleX(0); 
-  transition: var(--timing-animation);
+  transition: transform var(--timing-animation),
+  color var(--timing-animation);
   
 
 }
@@ -443,7 +441,8 @@ p {
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  transition:  var(--timing-animation);
+  transition: background-color var(--timing-animation),
+  fill var(--timing-animation);
 }
 
 
@@ -485,7 +484,9 @@ p {
   width: 170px;
   height: 90px;
 
-  transition:  var(--timing-animation);
+  transition: background-color var(--timing-animation),
+  border var(--timing-animation),
+  fill var(--timing-animation);
 }
 
 .client-logo:hover,
@@ -494,11 +495,6 @@ p {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
-
-/* . {
-  width: 50px;
-  height: 50px;
-} */
 
 
 /* Button */
@@ -523,8 +519,8 @@ button {
     border-radius: 4px;
     padding-left: 22px;
     padding-right: 22px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: none;
     outline: none;
   }
@@ -532,8 +528,8 @@ button {
 .button.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: none;
     outline: none;
   }
@@ -646,7 +642,7 @@ footer b {
 }
 
 .social-footer {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
   fill: var(--primary-white-color);
   display: flex;
   justify-content: center;
@@ -656,7 +652,7 @@ footer b {
   width: 44px;
   border-radius: 50%;
 
-  transition:  var(--timing-animation);
+  transition: background-color var(--timing-animation);
 }
 
 .social-footer:hover,
