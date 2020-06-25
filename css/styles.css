@@ -206,7 +206,9 @@ p {
 .nav-link:hover::after,
 .nav-link:focus::after,
 .address-nav .link:hover,
-.address-nav .link:focus {
+.address-nav .link:focus,
+.address-footer .link:hover,
+.address-footer .link:focus  {
   color: var(--accent-color);
   fill: var(--accent-color);
   transform: scaleX(1); 
@@ -621,6 +623,7 @@ footer b {
     font-weight: 400;
     line-height: 1.71;
     text-decoration: none;
+    transition:  var(--timing-animation);
     
 }
 .subscribe-social {
@@ -675,8 +678,6 @@ footer b {
   padding-left: 12px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
-  
-
 }
 
 .subscribe-link {
