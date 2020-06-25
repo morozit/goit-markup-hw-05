@@ -143,6 +143,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--text-title-color);
   text-decoration: none;
 }
 
@@ -158,6 +159,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
   text-decoration: none;
   
   color: var(--text-title-color);
@@ -623,7 +625,7 @@ footer b {
     font-weight: 400;
     line-height: 1.71;
     text-decoration: none;
-    transition:  var(--timing-animation);
+    transition:  color var(--timing-animation);
     
 }
 .subscribe-social {
