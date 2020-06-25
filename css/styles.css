@@ -146,6 +146,7 @@ p {
   text-decoration: none;
 
   color: var(--text-title-color);
+  transition:  var(--timing-animation);
 }
 
 .address-nav .link {
@@ -164,7 +165,7 @@ p {
   
   color: var(--text-title-color);
   fill: var(--primary-logo-color);
-  
+  transition:  var(--timing-animation);
 }
 
 .nav-link::after {
@@ -182,6 +183,7 @@ p {
   transform: scaleX(0); 
   transition:  var(--timing-animation);
   color: var(--text-title-color);
+  
 }
 
 .nav-link:hover,
@@ -190,9 +192,9 @@ p {
 .nav-link:focus::after,
 .address-nav .link:hover,
 .address-nav .link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-    transform: scaleX(1); 
+  color: var(--accent-color);
+  fill: var(--accent-color);
+  transform: scaleX(1); 
     
     
 }
@@ -422,6 +424,7 @@ p {
   height: 44px;
   width: 44px;
   border-radius: 50%;
+  transition:  var(--timing-animation);
 }
 
 
@@ -462,6 +465,8 @@ p {
 
   width: 170px;
   height: 90px;
+
+  transition:  var(--timing-animation);
 }
 
 .client-logo:hover,
@@ -630,6 +635,8 @@ footer b {
   height: 44px;
   width: 44px;
   border-radius: 50%;
+
+  transition:  var(--timing-animation);
 }
 
 .social-footer:hover,
